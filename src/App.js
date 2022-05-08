@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { AddColor } from "./AddColor";
 
 // Component definition/declaration
 // App - component
@@ -23,24 +23,10 @@ export default function App() {
   ];
   return (
     <div className="App">
-      {users.map((usr) => (
+      {/* {users.map((usr) => (
         <Msg name={usr.name} pic={usr.pic} />
-      ))}
-    </div>
-  );
-}
-
-function Counter() {
-  const [like, setLike] = useState(0);
-  const [dislike, setDisLike] = useState(0);
-  return (
-    <div>
-      <button className="btn-like" onClick={() => setLike(like + 1)}>
-        👍 {like}
-      </button>
-      <button className="btn-dislike" onClick={() => setDisLike(dislike + 1)}>
-        👎 {dislike}
-      </button>
+      ))} */}
+      <AddColor />
     </div>
   );
 }
@@ -54,12 +40,12 @@ function Counter() {
 // Component Msg - Component definition/declaration
 // 1. first letter must be capital
 // 2. Return only one JSX element
-function Msg({ name, pic }) {
-  return (
-    <div className="msg-container">
-      <img className="profile-pic" src={pic} alt={name} />
-      <h1>Hello {name} 👋😎🎉🎉</h1>
-      <Counter />
-    </div>
-  );
-}
+// function Msg({ name, pic }) {
+//   return (
+//     <div className="msg-container">
+//       <img className="profile-pic" src={pic} alt={name} />
+//       <h1>Hello {name} 👋😎🎉🎉</h1>
+//       <Counter />
+//     </div>
+//   );
+// }

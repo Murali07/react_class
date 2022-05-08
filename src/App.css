@@ -18,3 +18,7 @@
 .msg-container {
   padding: 2rem;
 }
+.add-color{
+  display: flex;
+}
+
